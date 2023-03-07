@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(./assets/themes/colors.scss);
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-size: 15px;
+    font-family: 'Overpass';
+}

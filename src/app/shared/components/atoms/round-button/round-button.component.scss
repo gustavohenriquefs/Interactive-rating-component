@@ -2,6 +2,10 @@ $btnSize: 40px;
 $iconSize: 0.85rem;
 
 .round-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
     border: 0;
 
     border-radius: 50%;
@@ -14,5 +18,12 @@ $iconSize: 0.85rem;
         height: $iconSize;
         margin: auto;
     }
+
+    &__text {
+        margin: auto;
+    }
 }
 
+.ativado {
+    background: green;
+}

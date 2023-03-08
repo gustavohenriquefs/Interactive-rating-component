@@ -10,12 +10,18 @@ export class RoundButtonComponent implements OnInit {
 
   @Input() ariaLabel!: string;
   @Input() iconLink!: string;
-  @Input() text!: string;
+  @Input() text!: string | number;
   @Input() bgColor!: AppButton;
+  @Input() ariaHidden: boolean = false;
+  @Input() isChecked: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleActivateState(button: HTMLButtonElement) {
+    button.classList.toggle('active');
   }
 
 }

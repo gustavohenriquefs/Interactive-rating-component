@@ -8,29 +8,34 @@ body {
     padding: 0;
     margin: 0;
 
-    font-size: 15px;
     font-family: 'Overpass';
+    font-size: 15px;
 }
 
 body {
     background-color: map-get($default-value-map, bg-primary);
-    color: map-get($default-value-map, font-nomal);
+    color: map-get($default-value-map, font-normal);
 
     .btn-primary {
         background: map-get($default-value-map, btn-primary);
     }
 
     .title {
+        font-size: 1.5rem;
         color: map-get($default-value-map, font-title);
     }
 
     .text-normal {
-        color: map-get($default-value-map, font-nomal);
+        color: map-get($default-value-map, font-normal);
     }
 
     .card {
         background-color: map-get($default-value-map, bg-card);
-        padding: 30px;
+        padding: 20px;
         border-radius: 20px;
+
+
+        width: 350px;
+        margin: auto;
     }
 }

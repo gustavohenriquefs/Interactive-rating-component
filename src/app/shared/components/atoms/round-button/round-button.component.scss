@@ -1,17 +1,17 @@
-$btnWidth: 2rem;
-$iconWidth: 1rem;
+$btnSize: 40px;
+$iconSize: 0.85rem;
 
 .round-button {
     border: 0;
 
     border-radius: 50%;
-    width: $btnWidth;
-    height: $btnWidth;
+    width: $btnSize;
+    height: $btnSize;
 
     &__icon {
         display: flex;
-        width: $iconWidth;
-        height: $iconWidth;
+        width: $iconSize;
+        height: $iconSize;
         margin: auto;
     }
 }

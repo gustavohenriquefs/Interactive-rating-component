@@ -1,4 +1,5 @@
-@import url(./assets/themes/colors.scss);
+@import './assets/themes/colors.scss';
+@import './assets/themes/default.scss';
 
 *,
 html,
@@ -9,4 +10,21 @@ body {
 
     font-size: 15px;
     font-family: 'Overpass';
+}
+
+body {
+    background-color: map-get($default-value-map, bg-primary);
+    color: map-get($default-value-map, font-nomal);
+
+    .btn-primary {
+        background: map-get($default-value-map, btn-primary);
+    }
+
+    .title {
+        color: map-get($default-value-map, font-title);
+    }
+
+    .text-normal {
+        color: map-get($default-value-map, font-nomal);
+    }
 }

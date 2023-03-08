@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+$default-value-map: (
+    name: "default",
+    bg-primary: var(--dark-blue-900), 
+
+    btn-primary: var(--dark-blue-500),
+    btn-active: var(--grey-300),
+    btn-hover: var(--orange-600),
+
+    font-title: var(--white),
+    font-normal: var(--grey-300)
+)

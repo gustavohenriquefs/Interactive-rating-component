@@ -27,4 +27,10 @@ body {
     .text-normal {
         color: map-get($default-value-map, font-nomal);
     }
+
+    .card {
+        background-color: map-get($default-value-map, bg-card);
+        padding: 30px;
+        border-radius: 20px;
+    }
 }

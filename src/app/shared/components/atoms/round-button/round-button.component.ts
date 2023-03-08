@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ButtonType } from '../../../models/buttons-type.model';
+import { AppButton } from '../../../models/buttons.model';
 
 @Component({
   selector: 'app-round-button',
@@ -11,7 +11,7 @@ export class RoundButtonComponent implements OnInit {
   @Input() ariaLabel!: string;
   @Input() iconLink!: string;
   @Input() text!: string;
-  @Input() bgColor!: ButtonType;
+  @Input() bgColor!: AppButton;
 
   constructor() { }
 

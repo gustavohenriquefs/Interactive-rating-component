@@ -1,0 +1,16 @@
+<button 
+    class="round-button"
+    [ngClass]="bgColor"
+    [attr.aria-label]="ariaLabel">
+    <i 
+        [attr.aria-hidden]="true" 
+        *ngIf="iconLink"
+        class="round-button__icon"
+    >
+        <img [src]="iconLink" alt="">
+    </i>
+
+    <span class="round-button__text" *ngIf="text">
+        {{ text }}
+    </span>
+</button>

@@ -1,0 +1,18 @@
+$btnWidth: 2rem;
+$iconWidth: 1rem;
+
+.round-button {
+    border: 0;
+
+    border-radius: 50%;
+    width: $btnWidth;
+    height: $btnWidth;
+
+    &__icon {
+        display: flex;
+        width: $iconWidth;
+        height: $iconWidth;
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,20 @@
+.card-rating {
+    
+    &__content {
+        @extend .flex-container--column;
+        gap: 18px;
+        
+        .content__form {
+            @extend .flex-container--column;
+            gap: 10px;
+
+            .form__description {
+            }
+        }
+    }
+}
+
+.flex-container--column {
+    display: flex;
+    flex-direction: column;
+}

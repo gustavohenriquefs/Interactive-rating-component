@@ -1,4 +1,8 @@
-<ul role="radiogroup" aria-label="Avaliação">
+<ul 
+    role="radiogroup" 
+    [attr.aria-labelledby]="idQuestion"
+    [attr.aria-describedby]="idDescription"
+>
     <li *ngFor="let button of buttonList">
         <app-round-button
             [ariaLabel]="button.ariaLabel"

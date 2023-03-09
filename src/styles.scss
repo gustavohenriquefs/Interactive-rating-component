@@ -18,24 +18,33 @@ body {
 
     .btn-secondary {
         background: map-get($default-value-map, btn-secondary);
+        color: map-get($default-value-map, font-normal);
+        
+        &[aria-checked="true"] {
+            background-color:  map-get($default-value-map, btn-secondary-checked);
+            color: white;
+        }
 
         &:hover {
             background: map-get($default-value-map, btn-secondary-bg-hover);
+            color: white;
         }
-
+        
         &:focus {
             outline-color: map-get($default-value-map, btn-secondary-bg-hover);
         }
+
     }
 
     .btn-primary {
         background: map-get($default-value-map, btn-primary);
-        color: map-get($default-value-map, btn-primary-font);
+        color: map-get($default-value-map, font-title);
         font-weight: 700;
+        cursor: pointer;
 
         &:hover {
             background: map-get($default-value-map, btn-primary-bg-hover);
-            color: map-get($default-value-map, btn-primary-font-hover);
+            color: map-get($default-value-map, font-contrast);
         }
 
         &:focus {
@@ -50,6 +59,16 @@ body {
 
     .text-normal {
         color: map-get($default-value-map, font-normal);
+    }
+
+    .icon-primary {
+        background: map-get($default-value-map, btn-secondary);
+        color: map-get($default-value-map, font-normal);
+        
+        &:focus {
+            outline-color: map-get($default-value-map, btn-secondary-bg-hover);
+        }
+
     }
 
     .card {

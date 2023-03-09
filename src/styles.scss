@@ -19,7 +19,8 @@ body {
     .btn-secondary {
         background: map-get($default-value-map, btn-secondary);
         color: map-get($default-value-map, font-normal);
-        
+        filter: contrast(0.9);
+
         &[aria-checked="true"] {
             background-color:  map-get($default-value-map, btn-secondary-checked);
             color: white;
@@ -64,7 +65,8 @@ body {
     .icon-primary {
         background: map-get($default-value-map, btn-secondary);
         color: map-get($default-value-map, font-normal);
-        
+        filter: contrast(0.9);
+
         &:focus {
             outline-color: map-get($default-value-map, btn-secondary-bg-hover);
         }

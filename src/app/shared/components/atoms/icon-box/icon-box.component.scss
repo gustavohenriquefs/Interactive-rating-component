@@ -2,11 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 42px;
+    height: 42px;
     border-radius: 30px;
 
     i {
         height: 17px;
     }
+}
+
+@media screen and (min-width: 400px) {
+    $btnSize: clamp(42px, calc(45px + 1vw),50px);
+    
+    .icon {
+        width: $btnSize;
+        height: $btnSize;
+   }
 }

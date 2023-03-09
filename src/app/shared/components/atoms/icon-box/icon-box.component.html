@@ -1,0 +1,14 @@
+<div 
+    class="icon"
+    [attr.aria-label]="ariaLabel" 
+    role="img"
+    [ngClass]="iconStyle"
+>
+    <i  
+        *ngIf="iconLink"
+        class="round-button__icon"
+        [attr.aria-hidden]="true"
+    >
+        <img [src]="iconLink">
+    </i>
+</div>

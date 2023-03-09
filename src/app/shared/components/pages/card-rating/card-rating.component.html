@@ -1,12 +1,10 @@
 <app-card class="card-rating">
     <section class="card-rating__content">
-        <app-round-button
-            [bgColor]="'btn-secondary'"
-            [iconLink]="'../../../../../assets/images/icon-star.svg'"
+        <app-icon-box
             [ariaLabel]="'Ícone de estrela'"
-            [ariaHidden]="true"
-        >
-        </app-round-button>
+            [iconLink]="'../../../../../assets/images/icon-star.svg'"
+            [iconStyle]="'icon-primary'"
+        ></app-icon-box>
 
         <form class="content__form">
             <h1 id="card-rating__question" class="form__title title">

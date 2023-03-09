@@ -9,13 +9,11 @@ $default-value-map: (
     btn-secondary: #2f3741,
     btn-active: var(--grey-300),
 
-    btn-primary-font: var(--white),
-
     btn-primary-bg-hover: var(--white),
     btn-secondary-bg-hover: var(--orange-600),
-
-    btn-primary-font-hover: var(--orange-600),
-
+    btn-secondary-checked: var(--grey-300),
+    
+    font-normal: var(--grey-300),
     font-title: var(--white),
-    font-normal: var(--grey-300)
+    font-contrast: var(--orange-600),
 )

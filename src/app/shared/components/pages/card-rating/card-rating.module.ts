@@ -5,6 +5,7 @@ import { CardModule } from './../../atoms/card/card.module';
 import { CardRatingComponent } from './card-rating.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
+import { IconBoxModule } from '../../atoms/icon-box/icon-box.module';
 
 @NgModule({
     imports: [
@@ -12,7 +13,8 @@ import { CommonModule } from "@angular/common";
         RoundButtonModule,
         ButtonModule,
         RatingButtonListModule,
-        CardModule
+        CardModule,
+        IconBoxModule
     ],
     declarations: [
         CardRatingComponent

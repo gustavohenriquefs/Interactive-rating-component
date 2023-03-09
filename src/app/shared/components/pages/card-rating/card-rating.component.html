@@ -1,0 +1,35 @@
+<app-card class="card-rating">
+    <section class="card-rating__content">
+        <app-round-button
+            [bgColor]="'btn-secondary'"
+            [iconLink]="'../../../../../assets/images/icon-star.svg'"
+            [ariaLabel]="'Ícone de estrela'"
+            [ariaHidden]="true"
+        >
+        </app-round-button>
+
+        <form class="content__form">
+            <h1 id="card-rating__question" class="form__title title">
+                How did we do?
+            </h1>
+
+            <p id="card-rating__description" class="form__description">
+                Please let us know how we did with your support request. All feedback is appreciated 
+                to help us improve our offering!
+            </p>
+
+            <app-rating-button-list
+                class="form__button-list"
+                [idDescription]="'card-rating__description'"
+                [idQuestion]="'card-rating__question'"
+            ></app-rating-button-list>
+            
+            <app-button
+                [btnStyle]="'btn-primary'"
+                [btnType]="'submit'"
+                [ariaLabel]="'Enviar avaliação'"
+                [text]="'SUBMIT'"
+            ></app-button>
+        </form>
+    </section>
+</app-card>

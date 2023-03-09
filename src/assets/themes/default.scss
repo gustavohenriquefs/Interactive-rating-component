@@ -5,9 +5,16 @@ $default-value-map: (
     bg-primary: var(--dark-blue-900),
     bg-card: var(--dark-blue-500), 
 
+    btn-primary: var(--orange-600),
     btn-secondary: #2f3741,
     btn-active: var(--grey-300),
-    btn-secondary-hover: var(--orange-600),
+
+    btn-primary-font: var(--white),
+
+    btn-primary-bg-hover: var(--white),
+    btn-secondary-bg-hover: var(--orange-600),
+
+    btn-primary-font-hover: var(--orange-600),
 
     font-title: var(--white),
     font-normal: var(--grey-300)

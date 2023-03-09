@@ -1,3 +1,4 @@
-export type AppButton = 'btn-secondary'    |   
-             'btn-active'         | 
-             'btn-hover';
+export type AppButton = 'btn-primary'    |  
+                        'btn-secondary'  |   
+                        'btn-active'     | 
+                        'btn-hover';

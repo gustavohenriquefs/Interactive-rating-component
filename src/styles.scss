@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
 
-    font-family: 'Overpass';
+    font-family: 'Overpass', sans-serif;
     font-size: 15px;
 }
 
@@ -16,8 +16,31 @@ body {
     background-color: map-get($default-value-map, bg-primary);
     color: map-get($default-value-map, font-normal);
 
+    .btn-secondary {
+        background: map-get($default-value-map, btn-secondary);
+
+        &:hover {
+            background: map-get($default-value-map, btn-secondary-bg-hover);
+        }
+
+        &:focus {
+            outline-color: map-get($default-value-map, btn-secondary-bg-hover);
+        }
+    }
+
     .btn-primary {
         background: map-get($default-value-map, btn-primary);
+        color: map-get($default-value-map, btn-primary-font);
+        font-weight: 700;
+
+        &:hover {
+            background: map-get($default-value-map, btn-primary-bg-hover);
+            color: map-get($default-value-map, btn-primary-font-hover);
+        }
+
+        &:focus {
+            outline-color: map-get($default-value-map, btn-secondary-bg-hover);
+        }
     }
 
     .title {
@@ -35,7 +58,7 @@ body {
         border-radius: 20px;
 
 
-        width: 350px;
+        width: 340px;
         margin: auto;
     }
 }

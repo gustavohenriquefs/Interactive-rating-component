@@ -1,9 +1,11 @@
+import { AppButton } from './../../../models/buttons.model';
 import { Component, Input, OnInit } from '@angular/core';
 
 interface RatingButton {
   rating: number;
   selected: boolean;
   ariaLabel: string;
+  btnStyle: AppButton;
 }
 
 @Component({
@@ -23,6 +25,7 @@ export class RatingButtonListComponent implements OnInit {
   public idDescription: string = "";
   
   public buttonList: RatingButton[] = [];
+  public lastChecked: RatingButton = {} as RatingButton;
 
   constructor() { }
 
@@ -38,10 +41,22 @@ export class RatingButtonListComponent implements OnInit {
       const newButton: RatingButton = {
         rating: buttonRating,
         selected: false,
-        ariaLabel: ariaLabel
+        ariaLabel: ariaLabel,
+        btnStyle: 'btn-secondary'
       }
       
       this.buttonList.push(newButton);
+    }
+  }
+
+  public activeButton(buttonChecked: RatingButton, btnIdx: number) {
+    if(buttonChecked !== this.lastChecked) {
+      this.lastChecked.selected = false;
+      this.lastChecked = buttonChecked;
+      buttonChecked.selected = true;
+    } else {
+      this.lastChecked.selected = false;
+      this.lastChecked = {} as RatingButton;
     }
   }
 

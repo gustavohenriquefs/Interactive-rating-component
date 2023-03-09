@@ -3,11 +3,18 @@
     [attr.aria-labelledby]="idQuestion"
     [attr.aria-describedby]="idDescription"
 >
-    <li *ngFor="let button of buttonList">
+    <li [attr.role]="'radio'"
+        [attr.aria-label]="button.ariaLabel"
+        [attr.aria-checked]="button.selected"
+        *ngFor="let button of buttonList; 
+        let btnIdx = index"
+    >
         <app-round-button
             [ariaLabel]="button.ariaLabel"
-            [bgColor]="'btn-secondary'"
+            [btnStyle]="button.btnStyle"
+            [isChecked]="button.selected"
             [text]="button.rating"
+            (clickInButton)="activeButton(button, btnIdx)"
         ></app-round-button>
     </li>
 </ul>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AppButton } from '../../../models/buttons.model';
 
 @Component({
@@ -11,17 +11,19 @@ export class RoundButtonComponent implements OnInit {
   @Input() ariaLabel!: string;
   @Input() iconLink!: string;
   @Input() text!: string | number;
-  @Input() bgColor!: AppButton;
+  @Input() btnStyle!: AppButton;
   @Input() ariaHidden: boolean = false;
   @Input() isChecked: boolean = false;
+
+  @Output() clickInButton: EventEmitter<void> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggleActivateState(button: HTMLButtonElement) {
-    button.classList.toggle('active');
+  toggleActivateState() {
+    this.clickInButton?.emit();
   }
 
 }

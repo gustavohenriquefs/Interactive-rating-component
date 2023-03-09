@@ -1,13 +1,10 @@
 <button 
     #button
     class="round-button"
-    [ngClass]="bgColor"
-    [attr.aria-label]="ariaLabel"
-    [attr.aria-checked]="isChecked"
-    role="radio"
+    [ngClass]="btnStyle"
     type="button"
     tabindex="0"
-    (click)="toggleActivateState(button)"
+    (click)="toggleActivateState()"
 >
     <i 
         [attr.aria-hidden]="true" 
@@ -17,7 +14,7 @@
         <img [src]="iconLink" alt="">
     </i>
 
-    <span class="round-button__text text-normal" *ngIf="text">
+    <span class="round-button__text" *ngIf="text">
         {{ text }}
     </span>
 </button>

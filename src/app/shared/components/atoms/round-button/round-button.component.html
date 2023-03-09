@@ -4,6 +4,8 @@
     [ngClass]="btnStyle"
     type="button"
     tabindex="0"
+    [attr.role]="'radio'"
+    [attr.aria-checked]="isChecked"
     (click)="toggleActivateState()"
 >
     <i 

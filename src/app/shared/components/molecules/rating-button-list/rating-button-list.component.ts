@@ -1,5 +1,5 @@
 import { AppButton } from './../../../models/buttons.model';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 interface RatingButton {
   rating: number;
@@ -23,6 +23,9 @@ export class RatingButtonListComponent implements OnInit {
 
   @Input()
   public idDescription: string = "";
+
+  @Output()
+  public checkRaiting: EventEmitter<number> = new EventEmitter();
   
   public buttonList: RatingButton[] = [];
   public lastChecked: RatingButton = {} as RatingButton;
@@ -58,6 +61,8 @@ export class RatingButtonListComponent implements OnInit {
       this.lastChecked.selected = false;
       this.lastChecked = {} as RatingButton;
     }
+
+    this.checkRaiting.emit(this.lastChecked.rating);
   }
 
 }

@@ -1,0 +1,42 @@
+.card-thank-you__content {
+    display: flex;
+    padding: 10px 0px 20px;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    .content__selected-item-info {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+
+        background: hsl(213, 19%, 18%);
+        border-radius: 25px;
+
+        color: hsl(25deg 97% 53%);
+        filter: contrast(0.9);
+
+        padding: 8px 12px;
+        
+        span {
+            height: 15px;
+        }
+    }
+
+    .message__title--title {
+        margin-top: 10px;
+    }
+
+    .content__img {
+        img {
+            width: 140px;
+        }
+    }
+
+    .content__message {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

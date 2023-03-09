@@ -6,7 +6,7 @@
             [iconStyle]="'icon-primary'"
         ></app-icon-box>
 
-        <form class="content__form">
+        <form class="content__form" (submit)="onSubmitRating()">
             <h1 id="card-rating__question" class="form__title title">
                 How did we do?
             </h1>
@@ -20,6 +20,7 @@
                 class="form__button-list"
                 [idDescription]="'card-rating__description'"
                 [idQuestion]="'card-rating__question'"
+                (checkRaiting)="setCheckedRating($event)"
             ></app-rating-button-list>
             
             <app-button
@@ -27,6 +28,8 @@
                 [btnType]="'submit'"
                 [ariaLabel]="'Enviar avaliação'"
                 [text]="'SUBMIT'"
+                [disabled]="!checkedRating"
+                [titleMessage]="!checkedRating ? 'selecione um rating para habilitar o botão.' : ''"
             ></app-button>
         </form>
     </section>

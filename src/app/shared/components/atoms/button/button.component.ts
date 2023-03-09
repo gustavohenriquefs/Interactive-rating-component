@@ -10,6 +10,8 @@ export class ButtonComponent implements OnInit {
   @Input() ariaLabel!: string;
   @Input() btnStyle!: string;
   @Input() btnType!: string;
+  @Input() disabled: boolean = false; 
+  @Input() titleMessage: string = "";
 
   constructor() { }
 

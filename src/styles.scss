@@ -75,8 +75,8 @@ body {
         background-color: map-get($default-value-map, bg-card);
         padding: 20px;
         border-radius: 20px;
+        margin: auto;
 
-
-        width: 340px;
+        width: clamp(200px, 90%, 400px);
     }
 }

@@ -11,6 +11,10 @@ const routes: Routes = [{
   path: 'thank-you/:rating', 
   component: CardThankYouComponent
 }, {
+  path: '',
+  pathMatch: 'full',
+  redirectTo: '/rating'
+}, {
   path: '**',
   redirectTo: '/rating',
   pathMatch: 'full'

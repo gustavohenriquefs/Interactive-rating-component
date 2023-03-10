@@ -1,27 +1,53 @@
-# Rating
+# Frontend Mentor - Interactive rating component solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+Users should be able to:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
 
-## Running unit tests
+### Screenshot
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![](./src/assets/images/readme/screen-mobile.png)
 
-## Running end-to-end tests
+![](./src/assets/images/readme/screen-desktop.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## My process
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular](https://angular.io/) - Framework
+- BEM
+- Semantic HTML5 markup
+- SCSS
+- Flexbox
+- Mobile-first workflow
+
+### What I learned
+
+- Accessibility
+- Responsiveness
+
+## Author
+
+- GitHub - [gustavohenriquefs](https://github.com/gustavohenriquefs)
+- Frontend Mentor - [@gustavohenriquefs](https://www.frontendmentor.io/profile/gustavohenriquefs)
+- Instagram - [@gus_henriquefs](https://www.instagram.com/gus_henriquefs/)
+- CodeForces - [gustavohenriquefs](https://codeforces.com/profile/gustavohenriquefs)
